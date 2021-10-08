@@ -6,26 +6,27 @@ import { HomeComponent } from './components/home/home.component';
 
 const routes: Routes = [
   {
-  path: '',
-  redirectTo: '/home',
-  pathMatch: 'full'
-},
-{
-  path: 'home',
-  component: HomeComponent
-},
-{
-  path: 'parte1',
-  component: Parte1Component
-},
-{
-  path: 'parte2',
-  component: Parte2Component,
-  canActivate: []
-}];
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full',
+  },
+  {
+    path: 'home',
+    component: HomeComponent,
+  },
+  {
+    path: 'parte1',
+    component: Parte1Component,
+  },
+  {
+    path: 'parte2',
+    component: Parte2Component,
+    canActivate: [],
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
